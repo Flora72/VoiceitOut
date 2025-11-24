@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Emergency Header -->
+<section class="text-center py-10">
+  <h1 class="text-4xl font-bold text-red-600 mb-4">Emergency Help</h1>
+  <p class="text-lg text-gray-700">
+    If you're in danger or need urgent support, use the options below to get help immediately.
+  </p>
+</section>
+
+<!-- Quick Action Buttons -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto py-8">
+  <a href="tel:+254700000000" class="bg-red-500 text-white p-6 rounded-lg shadow hover:bg-red-600 text-center">
+    📞 Call Emergency Helpline
+  </a>
+  <a href="sms:+254700000000" class="bg-yellow-500 text-white p-6 rounded-lg shadow hover:bg-yellow-600 text-center">
+    📩 Send Emergency SMS
+  </a>
+  <a href="/resources" class="bg-purple-600 text-white p-6 rounded-lg shadow hover:bg-purple-700 text-center">
+    📚 View Support Resources
+  </a>
+</section>
+
+<!-- Image Placeholder -->
+<section class="flex justify-center py-6">
+  <img src="https://via.placeholder.com/600x300" alt="Emergency support illustration" class="rounded-lg shadow-md" />
+</section>
+
+<!-- Additional Guidance -->
+<section class="max-w-3xl mx-auto text-center py-8">
+  <h2 class="text-2xl font-semibold text-red-500 mb-2">Stay Safe</h2>
+  <p class="text-gray-700">
+    If you're unsure what to do, visit our resources page or contact someone you trust. Your safety matters.
+  </p>
+</section>
+
+{% endblock %}

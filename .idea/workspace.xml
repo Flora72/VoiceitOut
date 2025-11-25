@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/VoiceitOut.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VoiceitOut.iml" afterDir="false" />
+    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="refactored code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceitOut/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceitOut/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vioApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,32 +52,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/florencendinda/VoiceitOut/vioApp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/florencendinda/VoiceitOut/vioApp",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vioApp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vioApp" />
+      <recent name="$PROJECT_DIR$/static/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -126,7 +132,8 @@
       <workItem from="1763978534324" duration="43000" />
       <workItem from="1763978610840" duration="64000" />
       <workItem from="1763978700138" duration="72000" />
-      <workItem from="1763978800479" duration="343000" />
+      <workItem from="1763978800479" duration="497000" />
+      <workItem from="1764065206249" duration="2455000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create base layout template with navbar and content block">
       <option name="closed" value="true" />
@@ -256,7 +263,31 @@
       <option name="project" value="LOCAL" />
       <updated>1763978262210</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="chore: configure project-level URL routing&#10;&#10;- Added admin route&#10;- Included vioApp URL patterns for app-level routing">
+      <option name="closed" value="true" />
+      <created>1763979325852</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1763979325852</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: define app-level URL routes for core pages&#10;&#10;- Mapped views to index, dashboard, report, history, and other templates&#10;- Enabled clean navigation across vioApp pages">
+      <option name="closed" value="true" />
+      <created>1763979343250</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1763979343250</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactored code">
+      <option name="closed" value="true" />
+      <created>1764065349975</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1764065349976</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +310,9 @@
     <MESSAGE value="feat: add views for rendering core templates and handling incident logic" />
     <MESSAGE value="feat: configure URL routes for vioApp templates and views" />
     <MESSAGE value="chore: register vioApp and configure template directory in settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: register vioApp and configure template directory in settings" />
+    <MESSAGE value="chore: configure project-level URL routing&#10;&#10;- Added admin route&#10;- Included vioApp URL patterns for app-level routing" />
+    <MESSAGE value="feat: define app-level URL routes for core pages&#10;&#10;- Mapped views to index, dashboard, report, history, and other templates&#10;- Enabled clean navigation across vioApp pages" />
+    <MESSAGE value="refactored code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored code" />
   </component>
 </project>

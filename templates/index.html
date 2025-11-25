@@ -1,28 +1,22 @@
 {% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
 {% block content %}
 
-<!-- Hero Section -->
-<section class="text-center py-12">
-  <h1 class="text-5xl font-bold text-purple-700 mb-4">Welcome to Voice It Out</h1>
-  <p class="text-lg text-gray-700 mb-6">
-    A safe space to report, get help, and be heard.
-  </p>
-  <a href="/report_incident" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">
+<!-- Glassmorphic Welcome Card -->
+<div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-8 max-w-xl text-center shadow-xl">
+  <h1 class="text-3xl font-bold text-purple-300 mb-4">Welcome to Voice It Out</h1>
+  <p class="text-lg text-pink-200 mb-6">A safe space to report, get help, and be heard.</p>
+  <a href="/report" class="bg-purple-700 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-lg shadow">
     Report an Incident
   </a>
-</section>
-
-<!-- Image Placeholder -->
-<section class="flex justify-center py-8">
-  <img src="https://via.placeholder.com/600x300" alt="Empowered woman illustration" class="rounded-lg shadow-md" />
-</section>
-
-<!-- Mission Statement -->
-<section class="max-w-3xl mx-auto text-center py-8">
-  <h2 class="text-2xl font-semibold text-purple-600 mb-2">Our Mission</h2>
-  <p class="text-gray-700">
-    Voice It Out is built to support survivors and promote safety by design. We believe technology can empower women and girls to speak out, seek help, and reclaim their digital spaces.
-  </p>
-</section>
+  <div class="mt-6 text-sm text-rose-200">
+    <h2 class="font-semibold">Our Mission</h2>
+    <p>
+      Voice It Out is built to support survivors and promote safety by design.
+      We believe technology can empower women and girls to speak out, seek help,
+      and reclaim their digital spaces.
+    </p>
+  </div>
+</div>
 
 {% endblock %}

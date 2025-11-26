@@ -1,36 +1,108 @@
 {% extends "base.html" %}
+{% block title %}About Us | Voice It Out{% endblock %}
+
 {% block content %}
 
-<!-- Page Header -->
-<section class="text-center py-10">
-  <h1 class="text-4xl font-bold text-purple-700 mb-4">About Voice It Out</h1>
-  <p class="text-lg text-gray-700">
-    Empowering women and girls to speak out against digital violence.
-  </p>
-</section>
+<div class="w-[calc(100%+3rem)] -m-6 bg-slate-900 overflow-hidden">
 
-<!-- Mission Section -->
-<section class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mb-8">
-  <h2 class="text-2xl font-semibold text-purple-600 mb-4">Our Mission</h2>
-  <p class="text-gray-700 leading-relaxed">
-    Voice It Out (VIO) is a platform designed to provide survivors with a safe space to report incidents, access resources, and receive support. 
-    Built during the Power Hacks Hackathon under the theme <span class="font-semibold">“Unite to End Digital Violence Against All Women & Girls”</span>, 
-    VIO leverages technology to amplify voices, promote safety by design, and connect survivors to the help they need.
-  </p>
-</section>
+    <div class="relative w-full h-[60vh] flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop"
+                 class="w-full h-full object-cover opacity-60"
+                 alt="Team Background">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/80 to-slate-900"></div>
+        </div>
 
-<!-- Vision Section -->
-<section class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mb-8">
-  <h2 class="text-2xl font-semibold text-purple-600 mb-4">Our Vision</h2>
-  <p class="text-gray-700 leading-relaxed">
-    We envision a digital world where women and girls can thrive without fear of harassment, bullying, or violence. 
-    By combining empathetic design, strong technical foundations, and AI-powered insights, VIO aims to be a trusted companion for survivors everywhere.
-  </p>
-</section>
+        <div class="relative z-10 text-center px-4 mt-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 mb-6 drop-shadow-2xl">
+                Our Story
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-200 font-light max-w-3xl mx-auto leading-relaxed">
+                Bridging the gap between <span class="text-pink-400 font-semibold">silence</span> and <span class="text-green-400 font-semibold">safety</span> through technology.
+            </p>
+        </div>
+    </div>
 
-<!-- Image Placeholder -->
-<section class="flex justify-center py-6">
-  <img src="https://via.placeholder.com/600x300" alt="Community empowerment illustration" class="rounded-lg shadow-md" />
-</section>
+    <div class="container mx-auto px-6 relative z-20 -mt-24 pb-20">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+            <div class="backdrop-blur-md bg-slate-800/90 border border-white/10 p-8 rounded-2xl text-center shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                <div class="text-5xl font-extrabold text-pink-500 mb-2">45%</div>
+                <p class="text-slate-300 text-sm font-bold uppercase tracking-widest">Women Face GBV</p>
+            </div>
+            <div class="backdrop-blur-md bg-slate-800/90 border border-white/10 p-8 rounded-2xl text-center shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                <div class="text-5xl font-extrabold text-purple-500 mb-2">24/7</div>
+                <p class="text-slate-300 text-sm font-bold uppercase tracking-widest">AI Monitoring</p>
+            </div>
+            <div class="backdrop-blur-md bg-slate-800/90 border border-white/10 p-8 rounded-2xl text-center shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                <div class="text-5xl font-extrabold text-blue-500 mb-2">100%</div>
+                <p class="text-slate-300 text-sm font-bold uppercase tracking-widest">Anonymous</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+            <div class="space-y-6 order-2 md:order-1">
+                <div class="inline-block px-4 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs font-bold uppercase tracking-wide border border-pink-500/30">
+                    Why We Exist
+                </div>
+                <h2 class="text-4xl font-bold text-white leading-tight">Silence is not an option.</h2>
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    Voice It Out was born from a simple realization: survivors don't report because they don't feel safe.
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    We are reclaiming digital spaces. By combining <strong>Ghost Protocol encryption</strong> with <strong>Empathic AI</strong>, we ensure that every report is treated with the urgency and dignity it deserves.
+                </p>
+
+                <div class="pl-6 border-l-4 border-purple-500 mt-4">
+                    <p class="text-white italic text-lg">"Safety is a right, not a privilege."</p>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 relative group">
+                <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2064&auto=format&fit=crop"
+                     alt="Community"
+                     class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center mb-20">
+            <h2 class="text-3xl font-bold text-white mb-10">Meet the Creator</h2>
+
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10 p-10 rounded-3xl shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-purple-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition"></div>
+
+                <div class="w-32 h-32 mx-auto mb-6 p-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full">
+                    <img src="https://ui-avatars.com/api/?name=Flora&background=0f172a&color=fff&size=128"
+                         class="rounded-full w-full h-full object-cover border-4 border-slate-800">
+                </div>
+
+                <h3 class="text-2xl font-bold text-white">Florence Ndinda</h3>
+                <p class="text-pink-400 font-medium mb-6">Developer & Visionary</p>
+
+                <p class="text-slate-300 italic max-w-lg mx-auto mb-8">
+                    "I built Voice It Out because I believe code can save lives. Technology is our tool; empathy is our fuel."
+                </p>
+
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="px-6 py-2 bg-white/5 hover:bg-white/10 rounded-full text-sm text-white border border-white/10 transition">
+                        GitHub
+                    </a>
+                    <a href="#" class="px-6 py-2 bg-white/5 hover:bg-white/10 rounded-full text-sm text-white border border-white/10 transition">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Ready to make a difference?</h2>
+            <a href="{% url 'signup' %}" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition">
+                Join the Community
+            </a>
+        </div>
+
+    </div>
+</div>
 
 {% endblock %}

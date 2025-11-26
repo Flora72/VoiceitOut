@@ -1,22 +1,114 @@
 {% extends "base.html" %}
-{% block title %}Welcome{% endblock %}
+{% block title %}Voice It Out - Home{% endblock %}
+
 {% block content %}
 
-<!-- Glassmorphic Welcome Card -->
-<div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-8 max-w-xl text-center shadow-xl">
-  <h1 class="text-3xl font-bold text-purple-300 mb-4">Welcome to Voice It Out</h1>
-  <p class="text-lg text-pink-200 mb-6">A safe space to report, get help, and be heard.</p>
-  <a href="/report" class="bg-purple-700 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-lg shadow">
-    Report an Incident
-  </a>
-  <div class="mt-6 text-sm text-rose-200">
-    <h2 class="font-semibold">Our Mission</h2>
-    <p>
-      Voice It Out is built to support survivors and promote safety by design.
-      We believe technology can empower women and girls to speak out, seek help,
-      and reclaim their digital spaces.
-    </p>
-  </div>
+<div class="absolute top-24 right-6 md:right-10 flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-green-500/30 shadow-lg animate-fade-in-down">
+    <span class="relative flex h-3 w-3">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+    </span>
+    <span class="text-xs font-mono text-green-400 tracking-wider">AI SYSTEM ONLINE</span>
 </div>
+
+<div class="container mx-auto px-4 py-8 flex flex-col items-center justify-center text-center relative z-10">
+
+  <div class="max-w-4xl mb-12 mt-8 animate-fade-in-up">
+
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
+      Your Voice Matters. <br>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">
+        Speak Up Safely.
+      </span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-slate-300 mb-10 font-light leading-relaxed max-w-2xl mx-auto">
+      An anonymous, encrypted, and AI-powered safe haven.
+      We use advanced sentiment analysis to prioritize your safety instantly.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
+      <a href="{% url 'report_incident' %}" class="group relative bg-gradient-to-r from-pink-600 to-purple-600 text-white text-lg font-bold py-4 px-10 rounded-full shadow-2xl transition transform hover:scale-105 hover:shadow-purple-500/50">
+        <span class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-10 rounded-full transition"></span>
+         Report Incident
+        <span class="absolute -inset-1 rounded-full border border-pink-500 opacity-50 animate-pulse"></span>
+      </a>
+
+      <a href="{% url 'resources' %}" class="group flex items-center gap-2 bg-slate-800/50 hover:bg-slate-700 text-white text-lg font-semibold py-4 px-10 rounded-full border border-white/10 backdrop-blur-md transition">
+         Find Safe Spaces
+      </a>
+    </div>
+
+    <div class="mt-12 flex justify-center gap-8 md:gap-16 opacity-80">
+        <div class="text-center">
+            <p class="text-2xl font-bold text-white">100%</p>
+            <p class="text-xs text-slate-400 uppercase tracking-widest">Anonymous</p>
+        </div>
+        <div class="text-center">
+            <p class="text-2xl font-bold text-white">24/7</p>
+            <p class="text-xs text-slate-400 uppercase tracking-widest">AI Support</p>
+        </div>
+        <div class="text-center">
+            <p class="text-2xl font-bold text-white">50+</p>
+            <p class="text-xs text-slate-400 uppercase tracking-widest">Partners</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+
+    <div class="group backdrop-blur-md bg-slate-900/40 border border-white/10 p-8 rounded-2xl hover:bg-slate-800/60 transition duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-900/20">
+      <div class="mb-4 w-14 h-14 bg-pink-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-bold text-white mb-3">Ghost Protocol</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        We do not track IP addresses. Your report is encrypted, stripped of metadata, and stored securely.
+      </p>
+    </div>
+
+    <div class="group backdrop-blur-md bg-slate-900/40 border border-white/10 p-8 rounded-2xl hover:bg-slate-800/60 transition duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-900/20">
+      <div class="mb-4 w-14 h-14 bg-cyan-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-bold text-white mb-3">AI Sentiment Engine</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Our algorithm scans reports for urgency trigger words and instantly alerts the Dashboard for critical cases.
+      </p>
+    </div>
+
+    <div class="group backdrop-blur-md bg-slate-900/40 border border-white/10 p-8 rounded-2xl hover:bg-slate-800/60 transition duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-900/20">
+      <div class="mb-4 w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-bold text-white mb-3">Survivor Centric</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Built with empathy. We provide direct links to 50+ localized Kenyan NGOs and legal aid clinics.
+      </p>
+    </div>
+
+  </div>
+
+
+
+<style>
+  .animate-fade-in-up { animation: fadeInUp 0.8s ease-out; }
+  .animate-fade-in-down { animation: fadeInDown 0.8s ease-out; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
 
 {% endblock %}

@@ -1,113 +1,183 @@
 {% extends "base.html" %}
-{% block title %}Resources{% endblock %}
+{% block title %}Resources & Support{% endblock %}
 
 {% block content %}
 
-<div class="container mx-auto px-4 max-w-6xl self-start mt-8 w-full relative">
+<div class="container mx-auto px-4 max-w-6xl self-start mt-8 w-full relative pb-20">
 
-    <div class="text-center mb-10">
-        <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300 mb-2">Support Resources</h1>
-        <p class="text-slate-300">Curated contacts and guides to help you heal and seek justice.</p>
+    <div class="text-center mb-12 animate-fade-in-up">
+        <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 mb-4 drop-shadow-lg">
+            Healing Starts Here
+        </h1>
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+            Verified, safe, and free resources. You don't have to navigate this alone.
+        </p>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-4 mb-10">
-        <span class="px-4 py-1 rounded-full bg-pink-600/20 text-pink-200 border border-pink-500/30 text-sm cursor-pointer hover:bg-pink-600/40 transition">❤️ Mental Health</span>
-        <span class="px-4 py-1 rounded-full bg-blue-600/20 text-blue-200 border border-blue-500/30 text-sm cursor-pointer hover:bg-blue-600/40 transition">⚖️ Legal Aid</span>
-        <span class="px-4 py-1 rounded-full bg-green-600/20 text-green-200 border border-green-500/30 text-sm cursor-pointer hover:bg-green-600/40 transition">🏥 Medical</span>
+    <div class="mb-16 animate-fade-in-up" style="animation-delay: 0.1s;">
+        <h2 class="text-2xl font-bold text-white mb-6 pl-4 border-l-4 border-purple-500">Immediate Action Guide</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl hover:bg-slate-800/80 transition group">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-purple-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold text-sm">1</span>
+                    <h3 class="text-lg font-bold text-white">Ensure Safety</h3>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Move to a safe location away from the perpetrator. If in immediate danger, call <strong>999</strong> or scream for help.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl hover:bg-slate-800/80 transition group">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-pink-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold text-sm">2</span>
+                    <h3 class="text-lg font-bold text-white">Preserve Evidence</h3>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Do not shower, change clothes, or delete messages. Take photos of injuries. This is crucial for legal action later.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl hover:bg-slate-800/80 transition group">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold text-sm">3</span>
+                    <h3 class="text-lg font-bold text-white">Seek Help</h3>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Visit a specialized hospital (like GVRC) or call <strong>1195</strong>. You do not need to report to the police first to get medical care.
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <span class="px-5 py-2 rounded-full bg-pink-600/10 text-pink-300 border border-pink-500/30 text-sm font-bold uppercase tracking-wider cursor-pointer hover:bg-pink-600/30 transition">Mental Health</span>
+        <span class="px-5 py-2 rounded-full bg-blue-600/10 text-blue-300 border border-blue-500/30 text-sm font-bold uppercase tracking-wider cursor-pointer hover:bg-blue-600/30 transition">Legal Justice</span>
+        <span class="px-5 py-2 rounded-full bg-green-600/10 text-green-300 border border-green-500/30 text-sm font-bold uppercase tracking-wider cursor-pointer hover:bg-green-600/30 transition">Medical Aid</span>
+    </div>
 
-        <div onclick="openModal('Befrienders Kenya', 'Mental Health Support', '+254 793594849 ', 'Provides confidential suicide prevention and emotional support.', 'https://befrienders.org/find-support-now/befrienders-kenya/')"
-             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-6 rounded-xl hover:border-pink-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-1 shadow-lg">
-            <div class="text-4xl mb-4 bg-pink-500/20 w-16 h-16 flex items-center justify-center rounded-full group-hover:scale-110 transition">🧠</div>
-            <h3 class="text-xl font-bold text-white mb-1">Befrienders Kenya</h3>
-            <p class="text-pink-400 text-xs font-bold uppercase mb-3">Mental Health</p>
-            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Free confidential support for those in emotional distress or at risk of suicide.</p>
-            <span class="text-pink-300 text-sm font-bold flex items-center gap-2 group-hover:underline">Quick View &rarr;</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up" style="animation-delay: 0.3s;">
+
+        <div onclick="openModal('Wangu Kanja Foundation', 'Trauma Counseling', '+254 115 001 574', 'Specialized survivor-led trauma counseling and psychosocial support.', 'https://wangukanjafoundation.org/', 'https://wa.me/254115001574')"
+             class="group cursor-pointer col-span-1 md:col-span-2 lg:col-span-1 relative backdrop-blur-xl bg-gradient-to-br from-purple-900/60 to-slate-900/60 border border-purple-500/30 p-8 rounded-3xl hover:shadow-2xl hover:shadow-purple-500/20 transition duration-500 transform hover:-translate-y-2 overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-purple-500 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition"></div>
+            <div class="relative z-10">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center text-3xl border border-purple-500/30">🧘‍♀️</div>
+                    <span class="bg-purple-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest animate-pulse">Featured</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Wangu Kanja Fdn.</h3>
+                <p class="text-purple-300 text-xs font-bold uppercase tracking-widest mb-4">Trauma & Healing</p>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">Access free, survivor-led therapy sessions. They understand because they have been there.</p>
+                <div class="flex items-center gap-2 text-purple-300 font-bold text-sm group-hover:text-white transition">
+                    <span>Connect Now</span> <span class="group-hover:translate-x-1 transition">&rarr;</span>
+                </div>
+            </div>
         </div>
 
-        <div onclick="openModal('FIDA Kenya', 'Legal Aid', '+254 20-3873511', 'The Federation of Women Lawyers in Kenya provides legal aid to women.', 'https://www.fidakenya.org/')"
-             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-6 rounded-xl hover:border-blue-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-1 shadow-lg">
-            <div class="text-4xl mb-4 bg-blue-500/20 w-16 h-16 flex items-center justify-center rounded-full group-hover:scale-110 transition">⚖️</div>
+        <div onclick="openModal('COVAW', 'Legal & Advocacy', '+254 722 594 794', 'Coalition on Violence Against Women. Champions for the rights of women and girls.', 'https://covaw.or.ke/', '')"
+             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-2 shadow-lg relative">
+            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-2xl mb-6">📢</div>
+            <h3 class="text-xl font-bold text-white mb-1">COVAW</h3>
+            <p class="text-blue-400 text-xs font-bold uppercase mb-4">Rights Advocacy</p>
+            <p class="text-slate-400 text-sm mb-6 line-clamp-3">Legal support and advocacy for women facing violence and discrimination.</p>
+            <span class="text-blue-300 text-xs font-bold uppercase tracking-widest group-hover:text-white transition">Quick View</span>
+        </div>
+
+        <div onclick="openModal('FIDA Kenya', 'Legal Aid', '+254 20 387 3511', 'The Federation of Women Lawyers in Kenya provides legal aid to women.', 'https://www.fidakenya.org/', '')"
+             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-8 rounded-3xl hover:border-pink-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-2 shadow-lg relative">
+            <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-2xl mb-6">⚖️</div>
             <h3 class="text-xl font-bold text-white mb-1">FIDA Kenya</h3>
-            <p class="text-blue-400 text-xs font-bold uppercase mb-3">Legal Justice</p>
-            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Legal aid and representation for women facing discrimination and violence.</p>
-            <span class="text-blue-300 text-sm font-bold flex items-center gap-2 group-hover:underline">Quick View &rarr;</span>
+            <p class="text-pink-400 text-xs font-bold uppercase mb-4">Legal Justice</p>
+            <p class="text-slate-400 text-sm mb-6 line-clamp-3">Legal aid and representation for women in distress.</p>
+            <span class="text-pink-300 text-xs font-bold uppercase tracking-widest group-hover:text-white transition">Quick View</span>
         </div>
 
-        <div onclick="openModal('GVRC', 'Medical & Recovery', '0800720565', 'Gender Violence Recovery Centre provides free medical and psychosocial support.', 'https://gvrc.co.ke/')"
-             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-6 rounded-xl hover:border-green-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-1 shadow-lg">
-            <div class="text-4xl mb-4 bg-green-500/20 w-16 h-16 flex items-center justify-center rounded-full group-hover:scale-110 transition">🏥</div>
+        <div onclick="openModal('GVRC', 'Medical & Recovery', '0800 720 565', 'Gender Violence Recovery Centre provides free medical and psychosocial support.', 'https://gvrc.co.ke/', '')"
+             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-8 rounded-3xl hover:border-green-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-2 shadow-lg relative">
+            <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center text-2xl mb-6">🏥</div>
             <h3 class="text-xl font-bold text-white mb-1">GVRC</h3>
-            <p class="text-green-400 text-xs font-bold uppercase mb-3">Medical Recovery</p>
-            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Specialized medical treatment and trauma counseling for survivors.</p>
-            <span class="text-green-300 text-sm font-bold flex items-center gap-2 group-hover:underline">Quick View &rarr;</span>
+            <p class="text-green-400 text-xs font-bold uppercase mb-4">Medical Recovery</p>
+            <p class="text-slate-400 text-sm mb-6 line-clamp-3">Specialized medical treatment and trauma counseling.</p>
+            <span class="text-green-300 text-xs font-bold uppercase tracking-widest group-hover:text-white transition">Quick View</span>
+        </div>
+
+        <div onclick="openModal('Befrienders Kenya', 'Mental Health Support', '+254 793 594 849', 'Provides confidential suicide prevention and emotional support.', 'https://befrienders.org/find-support-now/befrienders-kenya/', '')"
+             class="group cursor-pointer backdrop-blur-md bg-slate-900/60 border border-white/10 p-8 rounded-3xl hover:border-yellow-500/50 hover:bg-slate-800/80 transition duration-300 transform hover:-translate-y-2 shadow-lg relative">
+            <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center text-2xl mb-6">📞</div>
+            <h3 class="text-xl font-bold text-white mb-1">Befrienders</h3>
+            <p class="text-yellow-400 text-xs font-bold uppercase mb-4">Suicide Prevention</p>
+            <p class="text-slate-400 text-sm mb-6 line-clamp-3">Confidential emotional support for those in distress.</p>
+            <span class="text-yellow-300 text-xs font-bold uppercase tracking-widest group-hover:text-white transition">Quick View</span>
         </div>
 
     </div>
 </div>
 
-<div id="resourceModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
-
-    <div class="bg-slate-900 border border-white/20 rounded-2xl w-full max-w-lg p-8 shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
-
-        <div class="flex justify-between items-start mb-6">
+<div id="resourceModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-slate-900 border border-white/20 rounded-3xl w-full max-w-lg p-8 shadow-2xl transform scale-95 transition-transform duration-300 relative overflow-hidden" id="modalContent">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500 rounded-full blur-[80px] opacity-20 pointer-events-none"></div>
+        <div class="flex justify-between items-start mb-6 relative z-10">
             <div>
-                <h2 id="modalTitle" class="text-3xl font-bold text-white">Title</h2>
-                <span id="modalCategory" class="text-sm font-bold text-pink-400 uppercase tracking-wide">Category</span>
+                <h2 id="modalTitle" class="text-3xl font-bold text-white mb-1">Title</h2>
+                <span id="modalCategory" class="text-xs font-bold text-pink-400 uppercase tracking-widest bg-pink-500/10 px-2 py-1 rounded">Category</span>
             </div>
-            <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition">
-                ✕
-            </button>
+            <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-white/5 hover:bg-white/20 rounded-full w-10 h-10 flex items-center justify-center transition border border-white/10">✕</button>
         </div>
-
-        <div class="space-y-6">
-            <p id="modalDesc" class="text-slate-300 text-lg leading-relaxed">Description goes here...</p>
-
-            <div class="bg-white/5 rounded-xl p-4 border border-white/10 space-y-3">
-                <div class="flex items-center gap-3 text-white">
-                    <span class="bg-green-600/20 text-green-400 p-2 rounded-lg">📞</span>
-                    <div>
-                        <p class="text-xs text-slate-400 uppercase">Phone / Hotline</p>
-                        <a id="modalPhoneLink" href="#" class="font-bold hover:text-green-400 transition" id="modalPhone">+123 456 789</a>
+        <div class="space-y-6 relative z-10">
+            <p id="modalDesc" class="text-slate-300 text-base leading-relaxed">Description goes here...</p>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex items-center justify-between group hover:bg-white/10 transition cursor-pointer" onclick="document.getElementById('modalPhoneLink').click()">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center text-xl">📞</div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Hotline</p>
+                            <a id="modalPhoneLink" href="#" class="text-white font-bold group-hover:text-green-300 transition text-lg">+123 456 789</a>
+                        </div>
                     </div>
+                    <div class="text-slate-500 group-hover:text-white transition">&rarr;</div>
                 </div>
+                <a id="modalWhatsAppLink" href="#" target="_blank" class="hidden bg-green-600/10 rounded-xl p-4 border border-green-500/30 flex items-center justify-between group hover:bg-green-600/20 transition">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center text-xl">💬</div>
+                        <div>
+                            <p class="text-[10px] text-green-200 uppercase tracking-widest font-bold">WhatsApp Chat</p>
+                            <p class="text-white font-bold">Start Secure Chat</p>
+                        </div>
+                    </div>
+                    <div class="text-green-400 group-hover:text-white transition">&rarr;</div>
+                </a>
             </div>
         </div>
-
-        <div class="mt-8 flex gap-4">
-            <a id="modalExternalLink" href="#" target="_blank" class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 rounded-xl text-center shadow-lg transition transform hover:-translate-y-1">
-                Visit Official Site
-            </a>
-            <button onclick="closeModal()" class="px-6 py-3 rounded-xl border border-white/10 text-slate-300 hover:bg-white/5 font-bold transition">
-                Close
-            </button>
+        <div class="mt-8 pt-6 border-t border-white/10">
+            <a id="modalExternalLink" href="#" target="_blank" class="block w-full bg-white text-slate-900 font-bold py-3.5 rounded-xl text-center shadow-lg hover:bg-slate-200 transition transform hover:-translate-y-0.5">Visit Official Website</a>
         </div>
-
     </div>
 </div>
 
 <script>
     const modal = document.getElementById('resourceModal');
     const modalContent = document.getElementById('modalContent');
+    const waLink = document.getElementById('modalWhatsAppLink');
 
-    function openModal(title, category, phone, desc, url) {
-        // 1. Populate Data
+    function openModal(title, category, phone, desc, url, whatsapp) {
         document.getElementById('modalTitle').innerText = title;
         document.getElementById('modalCategory').innerText = category;
         document.getElementById('modalDesc').innerText = desc;
-
-        // Update Phone
         document.getElementById('modalPhoneLink').innerText = phone;
-        document.getElementById('modalPhoneLink').href = "tel:" + phone.replace(/\s/g, ''); // Removes spaces for tel: link
-
-        // Update Website Link
+        document.getElementById('modalPhoneLink').href = "tel:" + phone.replace(/\s/g, '');
         document.getElementById('modalExternalLink').href = url;
 
-        // 2. Show Modal (Animation logic)
+        if (whatsapp) {
+            waLink.href = whatsapp;
+            waLink.classList.remove('hidden');
+            waLink.classList.add('flex');
+        } else {
+            waLink.classList.add('hidden');
+            waLink.classList.remove('flex');
+        }
+
         modal.classList.remove('hidden');
-        // Small delay to allow 'hidden' to be removed before opacity transition starts
         setTimeout(() => {
             modal.classList.remove('opacity-0');
             modalContent.classList.remove('scale-95');
@@ -116,23 +186,20 @@
     }
 
     function closeModal() {
-        // Reverse Animation
         modal.classList.add('opacity-0');
         modalContent.classList.remove('scale-100');
         modalContent.classList.add('scale-95');
-
-        // Hide after animation finishes
-        setTimeout(() => {
-            modal.classList.add('hidden');
-        }, 300);
+        setTimeout(() => { modal.classList.add('hidden'); }, 300);
     }
 
-    // Close if clicking outside the modal box
     modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal();
-        }
+        if (e.target === modal) closeModal();
     });
 </script>
+
+<style>
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+</style>
 
 {% endblock %}

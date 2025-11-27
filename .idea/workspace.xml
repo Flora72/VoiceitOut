@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="">
+    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="style(contact): redesign page with 'become an ally' card and glassmorphic inputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emergency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/incident_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/incident_history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/report_incident.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/report_incident.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resources.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vioApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/vioApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vioApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vioApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vioApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vioApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vioApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +136,9 @@
       <workItem from="1763978800479" duration="497000" />
       <workItem from="1764065206249" duration="2602000" />
       <workItem from="1764146129549" duration="33000" />
-      <workItem from="1764146324422" duration="6301000" />
+      <workItem from="1764146324422" duration="6897000" />
+      <workItem from="1764222553506" duration="6322000" />
+      <workItem from="1764231611590" duration="2605000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create base layout template with navbar and content block">
       <option name="closed" value="true" />
@@ -327,34 +316,230 @@
       <option name="project" value="LOCAL" />
       <updated>1764068371787</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat(templates): revamp about page with parallax hero, impact stats, and creator profile">
+      <option name="closed" value="true" />
+      <created>1764153842953</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153842954</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(admin): customize admin interface to display color-coded AI urgency scores">
+      <option name="closed" value="true" />
+      <created>1764153859533</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153859533</updated>
+    </task>
+    <task id="LOCAL-00025" summary="design(base): add global glassmorphism theme, JS chatbot widget, and tailwind setup">
+      <option name="closed" value="true" />
+      <created>1764153878900</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153878900</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat(templates): implement contact form layout and volunteer call-to-action">
+      <option name="closed" value="true" />
+      <created>1764153893183</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153893184</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat(dashboard): overhaul dashboard UI with sidebar, AI visualization, and safety plan">
+      <option name="closed" value="true" />
+      <created>1764153902431</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153902431</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(emergency): add geolocation logic, WhatsApp SOS integration, and Kenyan hotlines">
+      <option name="closed" value="true" />
+      <created>1764153917263</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153917263</updated>
+    </task>
+    <task id="LOCAL-00029" summary="style(history): improve incident table layout and add status badges">
+      <option name="closed" value="true" />
+      <created>1764153932918</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153932918</updated>
+    </task>
+    <task id="LOCAL-00030" summary="design(landing): update home page with 'live system' badge and scroll animations">
+      <option name="closed" value="true" />
+      <created>1764153945684</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153945684</updated>
+    </task>
+    <task id="LOCAL-00031" summary="style(auth): apply glassmorphism design to login interface">
+      <option name="closed" value="true" />
+      <created>1764153958220</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153958220</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(models): add urgency_level and sentiment_score fields for AI analysis">
+      <option name="closed" value="true" />
+      <created>1764153968521</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153968521</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat(auth): create password reset template interface">
+      <option name="closed" value="true" />
+      <created>1764153993946</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1764153993946</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat(report): implement incident form with secure 'quick-exit' safety feature">
+      <option name="closed" value="true" />
+      <created>1764154004682</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154004682</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat(resources): add support directory with interactive quick-view modal">
+      <option name="closed" value="true" />
+      <created>1764154018947</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154018947</updated>
+    </task>
+    <task id="LOCAL-00036" summary="style(auth): apply glassmorphism design to user registration page">
+      <option name="closed" value="true" />
+      <created>1764154032492</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154032492</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat(urls): configure URL routes for dashboard, auth, and reporting views">
+      <option name="closed" value="true" />
+      <created>1764154043316</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154043316</updated>
+    </task>
+    <task id="LOCAL-00038" summary="backend: implement TextBlob AI sentiment logic and access control decorators">
+      <option name="closed" value="true" />
+      <created>1764154053475</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154053475</updated>
+    </task>
+    <task id="LOCAL-00039" summary="chore: update local IDE workspace configuration">
+      <option name="closed" value="true" />
+      <created>1764154063553</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154063553</updated>
+    </task>
+    <task id="LOCAL-00040" summary="migrations">
+      <option name="closed" value="true" />
+      <created>1764154126812</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154126813</updated>
+    </task>
+    <task id="LOCAL-00041" summary="requirements file">
+      <option name="closed" value="true" />
+      <created>1764154138156</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1764154138156</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat(dashboard): add full-height sidebar, polar area chart, and action buttons to table">
+      <option name="closed" value="true" />
+      <created>1764238439688</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238439688</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat(resources): add 'immediate action' guide, featured counseling card, and whatsapp integration">
+      <option name="closed" value="true" />
+      <created>1764238471816</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238471816</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat(report): expand incident categories (GBV/FGM) and visualize safety protocol timeline">
+      <option name="closed" value="true" />
+      <created>1764238492770</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238492770</updated>
+    </task>
+    <task id="LOCAL-00045" summary="content(about): update imagery to be women-centric and add donation call-to-action">
+      <option name="closed" value="true" />
+      <created>1764238507307</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238507307</updated>
+    </task>
+    <task id="LOCAL-00046" summary="style(contact): redesign page with 'become an ally' card and glassmorphic inputs">
+      <option name="closed" value="true" />
+      <created>1764238541986</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238541987</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create base layout template with navbar and content block" />
-    <MESSAGE value="feat: add landing page template with welcome message and quick access links" />
-    <MESSAGE value="feat: design dashboard template for user overview and quick actions" />
-    <MESSAGE value="feat: add incident reporting form template with input fields and submit button" />
-    <MESSAGE value="feat: create incident history template with table layout and status badges" />
-    <MESSAGE value="feat: add emergency contact and quick dial template" />
-    <MESSAGE value="feat: create contact page template with form and support info" />
-    <MESSAGE value="feat: add about page template with mission and team section" />
-    <MESSAGE value="feat: add resources page template with external links and support materials" />
-    <MESSAGE value="feat: create login template with form and password reset link" />
-    <MESSAGE value="feat: add signup template with user registration form" />
-    <MESSAGE value="feat: create password reset template with email input and confirmation message" />
-    <MESSAGE value="feat: define Incident model with type, description, status, and date_reported" />
-    <MESSAGE value="feat: add views for rendering core templates and handling incident logic" />
-    <MESSAGE value="feat: configure URL routes for vioApp templates and views" />
-    <MESSAGE value="chore: register vioApp and configure template directory in settings" />
-    <MESSAGE value="chore: configure project-level URL routing&#10;&#10;- Added admin route&#10;- Included vioApp URL patterns for app-level routing" />
-    <MESSAGE value="feat: define app-level URL routes for core pages&#10;&#10;- Mapped views to index, dashboard, report, history, and other templates&#10;- Enabled clean navigation across vioApp pages" />
-    <MESSAGE value="refactored code" />
-    <MESSAGE value="feat: base page with a dark purple bg and image" />
     <MESSAGE value="glassmorphic welcome card added" />
-    <option name="LAST_COMMIT_MESSAGE" value="glassmorphic welcome card added" />
+    <MESSAGE value="feat(templates): revamp about page with parallax hero, impact stats, and creator profile" />
+    <MESSAGE value="feat(admin): customize admin interface to display color-coded AI urgency scores" />
+    <MESSAGE value="design(base): add global glassmorphism theme, JS chatbot widget, and tailwind setup" />
+    <MESSAGE value="feat(templates): implement contact form layout and volunteer call-to-action" />
+    <MESSAGE value="feat(dashboard): overhaul dashboard UI with sidebar, AI visualization, and safety plan" />
+    <MESSAGE value="feat(emergency): add geolocation logic, WhatsApp SOS integration, and Kenyan hotlines" />
+    <MESSAGE value="style(history): improve incident table layout and add status badges" />
+    <MESSAGE value="design(landing): update home page with 'live system' badge and scroll animations" />
+    <MESSAGE value="style(auth): apply glassmorphism design to login interface" />
+    <MESSAGE value="feat(models): add urgency_level and sentiment_score fields for AI analysis" />
+    <MESSAGE value="feat(auth): create password reset template interface" />
+    <MESSAGE value="feat(report): implement incident form with secure 'quick-exit' safety feature" />
+    <MESSAGE value="feat(resources): add support directory with interactive quick-view modal" />
+    <MESSAGE value="style(auth): apply glassmorphism design to user registration page" />
+    <MESSAGE value="feat(urls): configure URL routes for dashboard, auth, and reporting views" />
+    <MESSAGE value="backend: implement TextBlob AI sentiment logic and access control decorators" />
+    <MESSAGE value="chore: update local IDE workspace configuration" />
+    <MESSAGE value="migrations" />
+    <MESSAGE value="requirements file" />
+    <MESSAGE value="feat(dashboard): add full-height sidebar, polar area chart, and action buttons to table" />
+    <MESSAGE value="feat(resources): add 'immediate action' guide, featured counseling card, and whatsapp integration" />
+    <MESSAGE value="feat(report): expand incident categories (GBV/FGM) and visualize safety protocol timeline" />
+    <MESSAGE value="content(about): update imagery to be women-centric and add donation call-to-action" />
+    <MESSAGE value="style(contact): redesign page with 'become an ally' card and glassmorphic inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(contact): redesign page with 'become an ally' card and glassmorphic inputs" />
   </component>
 </project>

@@ -3,67 +3,133 @@
 
 {% block content %}
 
-<div class="w-full max-w-4xl mx-auto">
-    <div class="backdrop-blur-md bg-slate-900/60 border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+<div class="w-full max-w-5xl mx-auto">
 
-        <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="flex justify-between items-center mb-6">
+        <a href="{% url 'dashboard' %}" class="group flex items-center gap-2 bg-slate-800/80 hover:bg-slate-700 border border-slate-600 text-white px-5 py-2.5 rounded-lg transition shadow-lg transform hover:-translate-y-0.5">
+            <span class="font-semibold text-sm">Back to Dashboard</span>
+        </a>
+    </div>
 
-            <div class="p-8">
-                <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300 mb-2">Report an Incident</h1>
-                <p class="text-slate-300 text-sm mb-6">
-                    Your safety is our priority. This report is <span class="text-pink-400 font-bold">Anonymous</span> unless you choose to identify yourself.
-                </p>
+    <div class="backdrop-blur-xl bg-slate-900/60 border border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
 
-                <form method="POST" action="" enctype="multipart/form-data" class="space-y-5">
-                    {% csrf_token %}
+        <div class="w-full md:w-3/5 p-8 md:p-10">
+            <h1 class="text-3xl font-bold text-white mb-2">Secure Reporting</h1>
+            <p class="text-slate-400 text-sm mb-8">
+                This form is encrypted. You can choose to remain <span class="text-pink-400 font-bold">100% Anonymous</span>.
+            </p>
 
-                    <div>
-                        <label for="incident_type" class="block text-sm font-medium text-pink-200 mb-1">Type of Incident</label>
+            <form method="POST" action="" enctype="multipart/form-data" class="space-y-6">
+                {% csrf_token %}
+
+                <div>
+                    <label for="incident_type" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Nature of Incident</label>
+                    <div class="relative">
                         <select id="incident_type" name="incident_type" required
-                            class="w-full bg-slate-800/50 border border-slate-600 text-white text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block p-2.5">
-                            <option value="" class="text-gray-400">Select Category...</option>
-                            <option value="harassment">Harassment</option>
-                            <option value="cyberbullying">Cyberbullying</option>
-                            <option value="domestic_violence">Domestic Violence</option>
-                            <option value="stalking">Stalking</option>
-                            <option value="workplace_safety">Workplace Safety</option>
-                            <option value="other">Other</option>
+                            class="w-full bg-slate-800/50 border border-slate-600 text-white text-sm rounded-xl focus:ring-purple-500 focus:border-purple-500 block p-3.5 appearance-none cursor-pointer hover:bg-slate-800 transition">
+                            <option value="" class="text-gray-500">Select Category...</option>
+
+                            <optgroup label="Physical & Sexual Violence">
+                                <option value="sexual_assault">Sexual Assault / Rape</option>
+                                <option value="domestic_violence">Domestic / Intimate Partner Violence</option>
+                                <option value="fgm">FGM (Female Genital Mutilation)</option>
+                                <option value="physical_assault">Physical Assault</option>
+                            </optgroup>
+
+                            <optgroup label="Harassment & Exploitation">
+                                <option value="sexual_harassment">Sexual Harassment</option>
+                                <option value="sextortion">Sextortion / Revenge Porn</option>
+                                <option value="workplace_harassment">Workplace Harassment</option>
+                                <option value="stalking">Stalking</option>
+                            </optgroup>
+
+                            <optgroup label="Other Forms">
+                                <option value="emotional_abuse">Emotional / Psychological Abuse</option>
+                                <option value="economic_abuse">Economic / Financial Abuse</option>
+                                <option value="cyberbullying">Cyberbullying</option>
+                                <option value="other">Other</option>
+                            </optgroup>
                         </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="description" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">What Happened?</label>
+                    <textarea id="description" name="description" rows="6" required
+                        class="w-full bg-slate-800/50 border border-slate-600 text-white text-sm rounded-xl focus:ring-purple-500 focus:border-purple-500 block p-4 placeholder-slate-500"
+                        placeholder="Please describe the incident. Include details like time, location, and immediate needs. Our AI will prioritize this based on urgency..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full group relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-xl p-4 transition transform hover:-translate-y-1 shadow-lg hover:shadow-purple-500/25">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-50 transition-opacity blur-md"></span>
+                    <span class="relative flex items-center justify-center gap-2">
+                        Submit Report
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </span>
+                </button>
+
+            </form>
+        </div>
+
+        <div class="hidden md:flex w-2/5 bg-gradient-to-br from-indigo-900/50 to-purple-900/50 p-10 border-l border-white/5 flex-col justify-between relative overflow-hidden">
+
+            <div class="absolute top-0 right-0 w-64 h-64 bg-pink-500 rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+
+            <div>
+                <h3 class="text-xl font-bold text-white mb-6">How we protect you</h3>
+
+                <div class="space-y-8 relative">
+                    <div class="absolute left-3.5 top-2 bottom-2 w-0.5 bg-white/10"></div>
+
+                    <div class="relative flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 border border-white/20 flex items-center justify-center z-10 shrink-0">
+                            <span class="text-xs">🔒</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ghost Protocol</h4>
+                            <p class="text-xs text-slate-400 mt-1">Your data is encrypted. IP addresses are scrubbed immediately.</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="description" class="block text-sm font-medium text-pink-200 mb-1">Description</label>
-                        <textarea id="description" name="description" rows="5" required
-                            class="w-full bg-slate-800/50 border border-slate-600 text-white text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block p-2.5 placeholder-gray-500"
-                            placeholder="Please describe what happened. Our AI will prioritize your report based on urgency..."></textarea>
+                    <div class="relative flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 border border-white/20 flex items-center justify-center z-10 shrink-0">
+                            <span class="text-xs">🤖</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">AI Triage</h4>
+                            <p class="text-xs text-slate-400 mt-1">Our system scans for "Danger" keywords to prioritize your case.</p>
+                        </div>
                     </div>
 
-                    <button type="submit" class="w-full text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 font-bold rounded-lg text-sm px-5 py-3 text-center transition transform hover:-translate-y-1">
-                        Submit
-                    </button>
-                </form>
-            </div>
-
-            <div class="hidden md:flex bg-slate-800/50 items-center justify-center p-8 border-l border-white/5 relative">
-                <div class="text-center">
-                    <div class="text-6xl mb-4"></div>
-                    <h3 class="text-xl font-bold text-white mb-2">You are heard.</h3>
-                    <p class="text-slate-400 text-sm">
-                        "Speaking up is the first step towards healing. We are here to listen, not to judge."
-                    </p>
-
-                    <div class="mt-8 p-4 bg-red-900/30 border border-red-500/30 rounded-lg">
-                        <p class="text-red-200 text-xs">
-                            <strong>Immediate Danger?</strong><br>
-                            If you are in immediate physical danger, please call 911 or your local emergency number immediately.
-                        </p>
+                    <div class="relative flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 border border-white/20 flex items-center justify-center z-10 shrink-0">
+                            <span class="text-xs">🤝</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sisterhood Support</h4>
+                            <p class="text-xs text-slate-400 mt-1">We connect you to verified NGOs, legal aid, and counseling.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div class="bg-red-500/10 border border-red-500/30 p-4 rounded-xl mt-8">
+                <div class="flex items-center gap-2 mb-1">
+                    <svg class="w-4 h-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    <span class="text-xs font-bold text-red-300 uppercase">Immediate Danger?</span>
+                </div>
+                <p class="text-[11px] text-red-200/80 leading-snug">
+                    If you are being hurt right now, do not use this form.
+                    <a href="tel:999" class="underline font-bold hover:text-white">Call 999</a> or <a href="tel:1195" class="underline font-bold hover:text-white">1195</a> immediately.
+                </p>
+            </div>
+
         </div>
+
     </div>
 </div>
-
 
 {% endblock %}

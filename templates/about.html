@@ -7,10 +7,10 @@
 
     <div class="relative w-full h-[60vh] flex items-center justify-center">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop"
-                 class="w-full h-full object-cover opacity-60"
-                 alt="Team Background">
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/80 to-slate-900"></div>
+            <img src="https://images.pexels.com/photos/5711382/pexels-photo-5711382.jpeg"
+                 class="w-full h-full object-cover opacity-50"
+                 alt="Women Solidarity">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
         </div>
 
         <div class="relative z-10 text-center px-4 mt-10">
@@ -18,7 +18,7 @@
                 Our Story
             </h1>
             <p class="text-xl md:text-2xl text-slate-200 font-light max-w-3xl mx-auto leading-relaxed">
-                Bridging the gap between <span class="text-pink-400 font-semibold">silence</span> and <span class="text-green-400 font-semibold">safety</span> through technology.
+                Bridging the gap between <span class="text-pink-400 font-semibold">silence</span> and <span class="text-green-400 font-semibold">safety</span>.
             </p>
         </div>
     </div>
@@ -60,8 +60,8 @@
 
             <div class="order-1 md:order-2 relative group">
                 <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2064&auto=format&fit=crop"
-                     alt="Community"
+                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=2070&auto=format&fit=crop"
+                     alt="Community Support"
                      class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
             </div>
         </div>
@@ -95,11 +95,21 @@
             </div>
         </div>
 
-        <div class="text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Ready to make a difference?</h2>
-            <a href="{% url 'signup' %}" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition">
-                Join the Community
-            </a>
+        <div class="text-center bg-white/5 p-12 rounded-3xl border border-white/10">
+            <h2 class="text-3xl font-bold text-white mb-4">Support Our Mission</h2>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8">
+                Your contribution helps us keep the servers running, the AI active, and the platform free for all survivors.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="{% url 'signup' %}" class="inline-block bg-white text-slate-900 font-bold py-3 px-10 rounded-full shadow-lg hover:bg-slate-200 transition">
+                    Join Community
+                </a>
+
+                <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition">
+                    <span>❤️</span> Donate
+                </a>
+            </div>
         </div>
 
     </div>

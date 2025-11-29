@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="style(contact): redesign page with 'become an ally' card and glassmorphic inputs">
+    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emergency.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
     </list>
@@ -138,7 +141,10 @@
       <workItem from="1764146129549" duration="33000" />
       <workItem from="1764146324422" duration="6897000" />
       <workItem from="1764222553506" duration="6322000" />
-      <workItem from="1764231611590" duration="2605000" />
+      <workItem from="1764231611590" duration="2724000" />
+      <workItem from="1764252680547" duration="597000" />
+      <workItem from="1764330857495" duration="139000" />
+      <workItem from="1764425566129" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create base layout template with navbar and content block">
       <option name="closed" value="true" />
@@ -508,16 +514,37 @@
       <option name="project" value="LOCAL" />
       <updated>1764238541987</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="style(auth): polish login and signup forms with input icons and clean layout">
+      <option name="closed" value="true" />
+      <created>1764238558098</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238558098</updated>
+    </task>
+    <task id="LOCAL-00048" summary="style(nav): add donate link to navbar and adjust layout containers">
+      <option name="closed" value="true" />
+      <created>1764238570610</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238570610</updated>
+    </task>
+    <task id="LOCAL-00049" summary="chore: update IDE workspace settings">
+      <option name="closed" value="true" />
+      <created>1764238602556</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1764238602556</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="glassmorphic welcome card added" />
-    <MESSAGE value="feat(templates): revamp about page with parallax hero, impact stats, and creator profile" />
-    <MESSAGE value="feat(admin): customize admin interface to display color-coded AI urgency scores" />
     <MESSAGE value="design(base): add global glassmorphism theme, JS chatbot widget, and tailwind setup" />
     <MESSAGE value="feat(templates): implement contact form layout and volunteer call-to-action" />
     <MESSAGE value="feat(dashboard): overhaul dashboard UI with sidebar, AI visualization, and safety plan" />
@@ -540,6 +567,9 @@
     <MESSAGE value="feat(report): expand incident categories (GBV/FGM) and visualize safety protocol timeline" />
     <MESSAGE value="content(about): update imagery to be women-centric and add donation call-to-action" />
     <MESSAGE value="style(contact): redesign page with 'become an ally' card and glassmorphic inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(contact): redesign page with 'become an ally' card and glassmorphic inputs" />
+    <MESSAGE value="style(auth): polish login and signup forms with input icons and clean layout" />
+    <MESSAGE value="style(nav): add donate link to navbar and adjust layout containers" />
+    <MESSAGE value="chore: update IDE workspace settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update IDE workspace settings" />
   </component>
 </project>

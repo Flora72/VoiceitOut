@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="">
+    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emergency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -144,31 +139,11 @@
       <workItem from="1764231611590" duration="2724000" />
       <workItem from="1764252680547" duration="597000" />
       <workItem from="1764330857495" duration="139000" />
-      <workItem from="1764425566129" duration="610000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: create base layout template with navbar and content block">
-      <option name="closed" value="true" />
-      <created>1763977983191</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1763977983191</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: add landing page template with welcome message and quick access links">
-      <option name="closed" value="true" />
-      <created>1763978002068</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1763978002068</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: design dashboard template for user overview and quick actions">
-      <option name="closed" value="true" />
-      <created>1763978026171</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1763978026171</updated>
+      <workItem from="1764425566129" duration="683000" />
+      <workItem from="1764445261802" duration="400000" />
+      <workItem from="1764449672517" duration="44000" />
+      <workItem from="1764486506038" duration="834000" />
+      <workItem from="1764575607767" duration="746000" />
     </task>
     <task id="LOCAL-00004" summary="feat: add incident reporting form template with input fields and submit button">
       <option name="closed" value="true" />
@@ -538,16 +513,37 @@
       <option name="project" value="LOCAL" />
       <updated>1764238602556</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="favicon">
+      <option name="closed" value="true" />
+      <created>1764427028800</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1764427028802</updated>
+    </task>
+    <task id="LOCAL-00051" summary="titling">
+      <option name="closed" value="true" />
+      <created>1764427040523</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1764427040523</updated>
+    </task>
+    <task id="LOCAL-00052" summary="config">
+      <option name="closed" value="true" />
+      <created>1764427063858</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1764427063858</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="design(base): add global glassmorphism theme, JS chatbot widget, and tailwind setup" />
-    <MESSAGE value="feat(templates): implement contact form layout and volunteer call-to-action" />
-    <MESSAGE value="feat(dashboard): overhaul dashboard UI with sidebar, AI visualization, and safety plan" />
     <MESSAGE value="feat(emergency): add geolocation logic, WhatsApp SOS integration, and Kenyan hotlines" />
     <MESSAGE value="style(history): improve incident table layout and add status badges" />
     <MESSAGE value="design(landing): update home page with 'live system' badge and scroll animations" />
@@ -570,6 +566,9 @@
     <MESSAGE value="style(auth): polish login and signup forms with input icons and clean layout" />
     <MESSAGE value="style(nav): add donate link to navbar and adjust layout containers" />
     <MESSAGE value="chore: update IDE workspace settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update IDE workspace settings" />
+    <MESSAGE value="favicon" />
+    <MESSAGE value="titling" />
+    <MESSAGE value="config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config" />
   </component>
 </project>

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="config">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
-    </list>
+    <list default="true" id="bfd98ff5-6018-494b-a828-1f3ac35d44e6" name="Changes" comment="changed to radar for the chart" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,15 +140,7 @@
       <workItem from="1764445261802" duration="400000" />
       <workItem from="1764449672517" duration="44000" />
       <workItem from="1764486506038" duration="834000" />
-      <workItem from="1764575607767" duration="746000" />
-    </task>
-    <task id="LOCAL-00004" summary="feat: add incident reporting form template with input fields and submit button">
-      <option name="closed" value="true" />
-      <created>1763978040468</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1763978040468</updated>
+      <workItem from="1764575607767" duration="825000" />
     </task>
     <task id="LOCAL-00005" summary="feat: create incident history template with table layout and status badges">
       <option name="closed" value="true" />
@@ -537,14 +526,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764427063858</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="changed to radar for the chart">
+      <option name="closed" value="true" />
+      <created>1764583912537</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1764583912538</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(emergency): add geolocation logic, WhatsApp SOS integration, and Kenyan hotlines" />
     <MESSAGE value="style(history): improve incident table layout and add status badges" />
     <MESSAGE value="design(landing): update home page with 'live system' badge and scroll animations" />
     <MESSAGE value="style(auth): apply glassmorphism design to login interface" />
@@ -569,6 +565,7 @@
     <MESSAGE value="favicon" />
     <MESSAGE value="titling" />
     <MESSAGE value="config" />
-    <option name="LAST_COMMIT_MESSAGE" value="config" />
+    <MESSAGE value="changed to radar for the chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to radar for the chart" />
   </component>
 </project>
